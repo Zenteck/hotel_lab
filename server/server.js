@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const parser = require('body-parser');
-app.use(parser.json());
+const bodyparser = require('body-parser');
+app.use(bodyparser.json());
 const cors = require('cors');
 app.use(cors());
 
@@ -11,9 +11,9 @@ const createRouter = require('./helpers/create_router.js');
 MongoClient.connect('mongodb://localhost:27017')
   .then((client) => {
     const db = client.db('hotel');
-    const guestsCollection = db.collection('guests');
-    const guestsRouter = createRouter(guestsCollection);
-    app.use('/api/guests', guestsRouter);
+    const bookingsCollection = db.collection('bookings');
+    const bookingsRouter = createRouter(bookingsCollection);
+    app.use('/api/bookings', bookingsRouter);
   })
   .catch(console.err);
 
