@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import {eventBus} from './main.js';
+import {eventBus} from '../main.js';
 import BookingService from '../services/BookingService';
 export default {
   name: "bookings-form",
@@ -56,7 +56,7 @@ h2 {
 form {
 	width: 75%;
 	margin: 0 auto;
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(255, 255, 255, 0.5);
 	padding: 20px;
 	margin-bottom: 40px;
 }

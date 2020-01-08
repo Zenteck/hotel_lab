@@ -11,7 +11,7 @@
 </template>
 
 <script>
-mport { eventBus } from '../main';
+import { eventBus } from '../main';
 import BookingService from '@/services/BookingService.js';
 export default {
 
@@ -33,4 +33,30 @@ export default {
 </script>
 
 <style lang="css" scoped>
+#bookingsGrid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+}
+
+.booking {
+	width: 30%;
+	background: rgba(255, 255, 255, 0.5);
+	margin-bottom: 20px;
+	padding: 25px;
+}
+
+button {
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 10px;
+	background: #F55536;
+}
 </style>

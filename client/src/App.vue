@@ -41,5 +41,17 @@ methods: {
 }
 </script>
 
-<style lang="css" scoped>
+<style>
+html {
+  height: 100%;
+}
+
+body {
+  background: url('https://i.pinimg.com/originals/b8/f7/09/b8f709e8166d9abf9be10d1ba46b4dbc.jpg') no-repeat;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 </style>
