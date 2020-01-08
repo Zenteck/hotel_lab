@@ -29,9 +29,15 @@ These instructions will get you a copy of the project up and running on your loc
 ### Server
 
 Install server dependencies:
+(These are not pre installed)
+npm install cors
+npm install body-bodyparser
+npm install nodemon
+npm install mongodb
+npm install express
 
 ```
-cd server
+(then in cd server)
 npm install
 ```
 
